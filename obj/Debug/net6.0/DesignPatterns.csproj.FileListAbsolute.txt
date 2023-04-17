@@ -1,0 +1,15 @@
+/home/fabrilsson/Documents/repo/DesignPatterns/bin/Debug/net6.0/DesignPatterns
+/home/fabrilsson/Documents/repo/DesignPatterns/bin/Debug/net6.0/DesignPatterns.deps.json
+/home/fabrilsson/Documents/repo/DesignPatterns/bin/Debug/net6.0/DesignPatterns.runtimeconfig.json
+/home/fabrilsson/Documents/repo/DesignPatterns/bin/Debug/net6.0/DesignPatterns.dll
+/home/fabrilsson/Documents/repo/DesignPatterns/bin/Debug/net6.0/DesignPatterns.pdb
+/home/fabrilsson/Documents/repo/DesignPatterns/obj/Debug/net6.0/DesignPatterns.csproj.AssemblyReference.cache
+/home/fabrilsson/Documents/repo/DesignPatterns/obj/Debug/net6.0/DesignPatterns.GeneratedMSBuildEditorConfig.editorconfig
+/home/fabrilsson/Documents/repo/DesignPatterns/obj/Debug/net6.0/DesignPatterns.AssemblyInfoInputs.cache
+/home/fabrilsson/Documents/repo/DesignPatterns/obj/Debug/net6.0/DesignPatterns.AssemblyInfo.cs
+/home/fabrilsson/Documents/repo/DesignPatterns/obj/Debug/net6.0/DesignPatterns.csproj.CoreCompileInputs.cache
+/home/fabrilsson/Documents/repo/DesignPatterns/obj/Debug/net6.0/DesignPatterns.dll
+/home/fabrilsson/Documents/repo/DesignPatterns/obj/Debug/net6.0/refint/DesignPatterns.dll
+/home/fabrilsson/Documents/repo/DesignPatterns/obj/Debug/net6.0/DesignPatterns.pdb
+/home/fabrilsson/Documents/repo/DesignPatterns/obj/Debug/net6.0/DesignPatterns.genruntimeconfig.cache
+/home/fabrilsson/Documents/repo/DesignPatterns/obj/Debug/net6.0/ref/DesignPatterns.dll
