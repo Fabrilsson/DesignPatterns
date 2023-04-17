@@ -12,12 +12,12 @@ namespace DesignPatterns.Strategy.Investment
             var value = new Random().Next(101);
 
             if (value > 80)
-                return account.Balance * 0.5;
+                return account.Balance * 0.05;
 
             if (value > 50 && value <= 80)
-                return account.Balance * 0.3;
+                return account.Balance * 0.03;
 
-            return account.Balance * 0.06;
+            return account.Balance * 0.006;
         }
     }
 }

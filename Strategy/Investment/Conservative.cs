@@ -9,7 +9,7 @@ namespace DesignPatterns.Strategy.Investment
     {
         public double Invest(BankAccount account)
         {
-            return account.Balance * 0.08;
+            return account.Balance * 0.008;
         }
     }
 }

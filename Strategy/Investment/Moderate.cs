@@ -10,9 +10,9 @@ namespace DesignPatterns.Strategy.Investment
         public double Invest(BankAccount account)
         {
             if (new Random().Next(101) > 50)
-                return account.Balance * 0.25;
+                return account.Balance * 0.025;
 
-            return account.Balance * 0.07;
+            return account.Balance * 0.007;
         }
     }
 }
