@@ -1,3 +1,4 @@
+using DesignPatterns.ChainOfResponsability;
 using DesignPatterns.Strategy.Investment;
 using DesignPatterns.Strategy.TaxCalculator;
 
@@ -6,6 +7,13 @@ namespace DesignPatterns
     public class Program
     {
         static void Main(string[] args)
+        {
+            RunStrategyPattern();
+
+            RunChainPattern();
+        }
+
+        static void RunStrategyPattern()
         {
             Tax iss = new ISS();
             Tax icms = new ICMS();
@@ -32,6 +40,19 @@ namespace DesignPatterns
             investmentMaker.Invest(bankAccount, bold);
 
             Console.ReadLine();
+        }
+
+        static void RunChainPattern()
+        {
+            var calculator = new DiscountCalculator();
+
+            var budget = new ChainBudget(1050.0);
+            budget.AddItem(new Item("CANETA", 800.0));
+            budget.AddItem(new Item("LAPIS", 250.0));
+
+            double desconto = calculator.Calculate(budget);
+
+            Console.WriteLine(desconto);
         }
     }
 }

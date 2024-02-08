@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace DesignPatterns.ChainOfResponsability.TaxCalculator
+namespace DesignPatterns.ChainOfResponsability
 {
     public class Item
     {
@@ -14,6 +14,11 @@ namespace DesignPatterns.ChainOfResponsability.TaxCalculator
         {
             Name = name;
             Value = value;
+        }
+
+        public void ApplyDiscount(double multiplier)
+        {
+            Value -= Value *= multiplier;
         }
     }
 }
