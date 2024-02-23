@@ -1,4 +1,5 @@
 using DesignPatterns.ChainOfResponsability;
+using DesignPatterns.ChainOfResponsability2;
 using DesignPatterns.Strategy.Investment;
 using DesignPatterns.Strategy.TaxCalculator;
 
@@ -11,6 +12,10 @@ namespace DesignPatterns
             RunStrategyPattern();
 
             RunChainPattern();
+
+            RunSecondChainPattern();
+
+            Console.ReadLine();
         }
 
         static void RunStrategyPattern()
@@ -23,9 +28,17 @@ namespace DesignPatterns
 
             TaxCalculator taxCalculator = new TaxCalculator();
 
+            Console.WriteLine();
+            Console.WriteLine("Strategy Pattern 1");
+            Console.WriteLine();
+
             taxCalculator.Calculate(budget, iss);
             taxCalculator.Calculate(budget, icms);
             taxCalculator.Calculate(budget, iccc);
+
+            Console.WriteLine();
+            Console.WriteLine("Stragegy Pattern 2");
+            Console.WriteLine();
 
             var bankAccount = new BankAccount(5500);
 
@@ -38,12 +51,14 @@ namespace DesignPatterns
             investmentMaker.Invest(bankAccount, conservative);
             investmentMaker.Invest(bankAccount, moderate);
             investmentMaker.Invest(bankAccount, bold);
-
-            Console.ReadLine();
         }
 
         static void RunChainPattern()
         {
+            Console.WriteLine();
+            Console.WriteLine("Chain Pattern 1");
+            Console.WriteLine();
+
             var calculator = new DiscountCalculator();
 
             var budget = new ChainBudget(1050.0);
@@ -53,6 +68,25 @@ namespace DesignPatterns
             double desconto = calculator.Calculate(budget);
 
             Console.WriteLine(desconto);
+        }
+
+        static void RunSecondChainPattern()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Chain Pattern 2");
+            Console.WriteLine();
+
+            var formatGenerator = new AccountFormatGenerator();
+
+            var result1 = formatGenerator.Generate(new Request(RequestFormat.XML));
+
+            var result2 = formatGenerator.Generate(new Request(RequestFormat.CSV));
+
+            var result3 = formatGenerator.Generate(new Request(RequestFormat.PERCENTAGE));
+
+            Console.WriteLine(result1);
+            Console.WriteLine(result2);
+            Console.WriteLine(result3);
         }
     }
 }
